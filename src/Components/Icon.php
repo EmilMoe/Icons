@@ -57,6 +57,10 @@ class Icon extends Component
      */
     public function render()
     {
+        if (! file_exists(view('Icon::icons.'. $this->icon)->getPath())) {
+            abort(500, 'Icon '. $this->icon .' does not exists');
+        }
+        
         return view('Icon::icons.'. $this->icon);
     }
 }
