@@ -6,7 +6,7 @@ use EmilMoe\Icons\Components\Icon;
 use EmilMoe\Icons\Components\Generic;
 use Illuminate\Support\ServiceProvider;
 
-class IconServiceProvider extends ServiceProvider
+class IconsServiceProvider extends ServiceProvider
 {
     /**
      * Perform post-registration booting of services.
