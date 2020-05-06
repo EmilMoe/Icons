@@ -33,6 +33,6 @@ class Icon extends Icon
      */
     public function render()
     {
-        return view('Icon::components.'. $this->icon);
+        return view('Icon::icons.'. $this->icon);
     }
 }
