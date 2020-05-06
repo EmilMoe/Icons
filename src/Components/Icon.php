@@ -4,7 +4,7 @@ namespace EmilMoe\Icons\Components;
 
 use Illuminate\View\Component;
 
-class Icon extends Icon 
+class Icon extends Component
 {
     /**
      * Icon to render.
@@ -14,6 +14,27 @@ class Icon extends Icon
     private $icon;
 
     /**
+     * Icon width.
+     * 
+     * @var string|int
+     */
+    public $width;
+
+    /**
+     * Icon height.
+     * 
+     * @var string|int
+     */
+    public $height;
+
+    /**
+     * Icon style classes.
+     * 
+     * @var string
+     */
+    public $class;
+
+    /**
      * Create a new component instance.
      *
      * @param  string|int  $width
@@ -21,9 +42,12 @@ class Icon extends Icon
      * @param  string      $class
      * @return void
      */
-    public function __construct(string $icon)
+    public function __construct(string $icon, $width = null, $height = null, string $class = '')
     {
         $this->icon = $icon;
+        $this->width = $width;
+        $this->height = $height;
+        $this->class = $class;
     }
 
     /**
