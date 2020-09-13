@@ -3,7 +3,7 @@
     "description": "Icon package",
     "type": "library",
     "require": {
-        "laravel/framework": "7.*"
+        "laravel/framework": "8.*"
     },
     "license": "Propertary",
     "authors": [
